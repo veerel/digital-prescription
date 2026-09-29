@@ -1,0 +1,232 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+}
+
+@media (max-width: 900px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+}
+
+.brandPanel {
+  background: radial-gradient(
+    120% 120% at 0% 0%,
+    var(--navy-700) 0%,
+    var(--navy-900) 45%,
+    var(--navy-950) 100%
+  );
+  color: var(--text-on-dark);
+  padding: 56px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.brandPanel::before {
+  content: "℞";
+  position: absolute;
+  font-family: var(--font-serif);
+  font-size: 620px;
+  right: -140px;
+  bottom: -220px;
+  color: rgba(255, 255, 255, 0.035);
+  line-height: 1;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .brandPanel {
+    padding: 40px 32px;
+  }
+}
+
+.brandMarkWrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 46px;
+}
+
+.brandMark {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(160deg, var(--teal-400), var(--teal-600));
+  color: var(--navy-950);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.brandWordmark {
+  font-size: 15px;
+  color: var(--text-on-dark-muted);
+  font-weight: 500;
+}
+
+.brandWordmark strong {
+  display: block;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.tagline {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 1.25;
+  max-width: 480px;
+  color: #fff;
+  position: relative;
+}
+
+.taglineSub {
+  margin-top: 16px;
+  font-size: 14.5px;
+  color: var(--text-on-dark-muted);
+  max-width: 440px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.featureList {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.featureList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+  color: var(--text-on-dark);
+  font-weight: 500;
+}
+
+.featureList svg {
+  color: var(--teal-400);
+  flex-shrink: 0;
+}
+
+.padPreview {
+  margin-top: 44px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  max-width: 340px;
+  position: relative;
+}
+
+.padLine {
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.14);
+  margin-bottom: 10px;
+}
+
+.padDivider {
+  border-top: 1px dashed rgba(255, 255, 255, 0.22);
+  margin: 14px 0;
+}
+
+.formPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  background: var(--bg);
+}
+
+.formCard {
+  width: 100%;
+  max-width: 400px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 34px 32px;
+}
+
+.title {
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--navy-900);
+}
+
+.subtitle {
+  margin-top: 5px;
+  margin-bottom: 26px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.inputWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: 0 12px;
+  color: var(--text-muted);
+}
+
+.inputWithIcon:focus-within {
+  border-color: var(--teal-500);
+  box-shadow: 0 0 0 3px var(--teal-100);
+}
+
+.footerNote {
+  margin-top: 22px;
+  font-size: 11.5px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* The input sits inside .inputWithIcon, which draws the border. */
+.bareInput {
+  border: none;
+  box-shadow: none;
+  padding: 9px 0;
+}
+
+.bareInput:focus {
+  box-shadow: none;
+}
+
+/* Eye toggle at the end of the password field. */
+.revealButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  margin-right: -6px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.revealButton:hover {
+  color: var(--text-primary);
+}
+
+.revealButton:focus-visible {
+  outline: 2px solid var(--teal-500);
+  outline-offset: 1px;
+}

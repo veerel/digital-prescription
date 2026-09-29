@@ -1,0 +1,40 @@
+.wrap {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  background: var(--bg);
+  padding: 20px;
+}
+
+.mark {
+  font-family: var(--font-serif);
+  font-size: 46px;
+  color: var(--teal-500);
+}
+
+.wrap h1 {
+  font-size: 40px;
+  color: var(--navy-900);
+}
+
+.wrap p {
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  max-width: 320px;
+}
+
+.homeLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--teal-600);
+  color: #fff;
+  font-weight: 600;
+  font-size: 13.5px;
+}

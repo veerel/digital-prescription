@@ -1,0 +1,122 @@
+.sidebar {
+  width: var(--sidebar-w);
+  flex-shrink: 0;
+  background: linear-gradient(185deg, var(--navy-900), var(--navy-950));
+  color: var(--text-on-dark);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 14px;
+  transition: width 0.2s ease;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.collapsed {
+  width: var(--sidebar-w-collapsed);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px 26px;
+}
+
+.brandMark {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  background: linear-gradient(160deg, var(--teal-400), var(--teal-600));
+  color: var(--navy-950);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 19px;
+  box-shadow: 0 4px 14px rgba(20, 184, 166, 0.35);
+}
+
+.brandText {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-on-dark-muted);
+  white-space: nowrap;
+}
+
+.brandText strong {
+  display: block;
+  color: #fff;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 12px;
+  border-radius: var(--radius-md);
+  color: var(--text-on-dark-muted);
+  font-size: 13.5px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.navItem:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+}
+
+.navItemActive {
+  background: rgba(45, 212, 191, 0.14);
+  color: #fff;
+  box-shadow: inset 3px 0 0 var(--teal-400);
+}
+
+.collapseBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-on-dark-muted);
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: 12.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.collapseBtn:hover {
+  background: rgba(255, 255, 255, 0.09);
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: var(--sidebar-w-collapsed);
+    padding: 20px 10px;
+  }
+
+  .brandText,
+  .navItem span,
+  .collapseBtn span {
+    display: none;
+  }
+}

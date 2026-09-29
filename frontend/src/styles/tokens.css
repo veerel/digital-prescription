@@ -1,0 +1,56 @@
+:root {
+  /* Brand */
+  --navy-950: #071f27;
+  --navy-900: #0b3d4c;
+  --navy-800: #123f4d;
+  --navy-700: #1a5262;
+  --navy-600: #23697b;
+  --teal-600: #0d9488;
+  --teal-500: #14b8a6;
+  --teal-400: #2dd4bf;
+  --teal-100: #e3f8f5;
+  --teal-50: #f0fbf9;
+
+  /* Neutrals */
+  --bg: #f4f7f8;
+  --surface: #ffffff;
+  --surface-muted: #f8fafb;
+  --border: #e2e8ed;
+  --border-strong: #cbd6dc;
+  --text-primary: #16232b;
+  --text-secondary: #5b6b73;
+  --text-muted: #8b9aa2;
+  --text-on-dark: #eaf3f3;
+  --text-on-dark-muted: #9fc0c3;
+
+  /* Status */
+  --danger: #dc4c4c;
+  --danger-bg: #fdecec;
+  --warning: #b9791a;
+  --warning-bg: #fbf1de;
+  --success: #2f9e6e;
+  --success-bg: #e7f6ee;
+  --info: #3568c9;
+  --info-bg: #eaf0fc;
+
+  /* Elevation */
+  --shadow-xs: 0 1px 2px rgba(11, 61, 76, 0.06);
+  --shadow-sm: 0 2px 8px rgba(11, 61, 76, 0.08);
+  --shadow-md: 0 8px 24px rgba(11, 61, 76, 0.1);
+  --shadow-lg: 0 16px 40px rgba(11, 61, 76, 0.16);
+
+  /* Shape */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* Type */
+  --font-ui: "Inter Variable", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "Lora Variable", "Lora", Georgia, "Times New Roman", serif;
+
+  /* Layout */
+  --sidebar-w: 264px;
+  --sidebar-w-collapsed: 76px;
+  --topbar-h: 68px;
+}
